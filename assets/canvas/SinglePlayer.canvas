@@ -1,0 +1,199 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "SinglePlayer",
+    "sceneWidth": 325,
+    "sceneHeight": 461,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT_6",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "// user code\r\nthis.initObjects();\r\nFacade.getInstance('Game').sendNotification('GAME_SCENE_CHANGED');"
+  },
+  "stateSettings": {
+    "scaleMode": "SHOW_ALL",
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "75e708ba-81c8-4783-bc1e-5b0c67094265",
+    "info": {
+      "editorName": "SinglePlayer",
+      "setAll": [],
+      "children": [
+        {
+          "type": "image",
+          "id": "8e96c3ff-69b5-4b5c-bd0b-b85b6945d9df",
+          "asset": "0",
+          "info": {
+            "editorName": "bg",
+            "x": -352,
+            "y": -132
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "0",
+          "id": "b010345e-ffac-4b37-a53a-fbbd6aeee024",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "preloader",
+            "asset": "coins",
+            "sprite": "1"
+          },
+          "info": {
+            "editorName": "back",
+            "x": 235,
+            "y": 165
+          }
+        },
+        {
+          "type": "group",
+          "id": "8edf2799-c371-40cb-8b3d-8e7b602f7432",
+          "info": {
+            "editorName": "paddles",
+            "setAll": [],
+            "children": [{
+              "type": "prefab",
+              "prefab": "1",
+              "id": "7e766515-99b1-4b95-bf92-b1994a4dd1f1",
+              "asset-ref": {
+                "file": "WebContent/assets/pack.json",
+                "section": "preloader",
+                "asset": "environ",
+                "sprite": "bridge"
+              },
+              "info": {
+                "editorName": "paddle_down",
+                "x": 87,
+                "y": 425
+              }
+            }]
+          }
+        },
+        {
+          "type": "group",
+          "id": "c0762ad0-203c-44a4-98c6-b807914b1231",
+          "info": {
+            "editorName": "backs",
+            "x": -2,
+            "y": -2,
+            "setAll": [],
+            "children": [{
+              "type": "text",
+              "id": "9d3655ca-af6a-4a90-9056-02a3569e801e",
+              "info": {
+                "editorName": "backText",
+                "x": 274,
+                "y": 220,
+                "text": "Back"
+              }
+            }]
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "2",
+          "id": "e8e669b8-b0ee-4e62-86ee-74098f06e6c4",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "preloader",
+            "asset": "mute"
+          },
+          "info": {
+            "editorName": "mute",
+            "x": 291,
+            "y": 12
+          }
+        },
+        {
+          "type": "text",
+          "id": "644626a0-a638-46b1-8b4d-8f485391c70c",
+          "info": {
+            "editorName": "score_text",
+            "editorPublic": true,
+            "x": 11,
+            "y": 14,
+            "text": "scoreText"
+          }
+        },
+        {
+          "type": "text",
+          "id": "ce5a1fe5-79e6-4cfd-ad90-504764ec7eb8",
+          "info": {
+            "editorName": "info_down",
+            "editorPublic": true,
+            "x": 124.453125,
+            "y": 223.1025390625,
+            "text": "infoText"
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "3",
+          "id": "6ea1e1a1-2c9a-4c42-96bc-154f068a1e46",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "preloader",
+            "asset": "hearts",
+            "sprite": "0"
+          },
+          "info": {
+            "editorName": "heart_down",
+            "editorPublic": true,
+            "x": 246,
+            "y": 9
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "4",
+          "id": "8a1dcbb5-0796-495d-bd81-2da79c7690c6",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "preloader",
+            "asset": "coins",
+            "sprite": "0"
+          },
+          "info": {
+            "editorName": "ball",
+            "x": 130,
+            "y": 365
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {"0": {
+    "file": "WebContent/assets/pack.json",
+    "section": "preloader",
+    "asset": "bg"
+  }},
+  "prefab-table": {
+    "0": "WebContent/assets/canvas/prefabs/Back.canvas",
+    "1": "WebContent/assets/canvas/prefabs/Paddle.canvas",
+    "2": "WebContent/assets/canvas/prefabs/MuteBtn.canvas",
+    "3": "WebContent/assets/canvas/prefabs/Heart.canvas",
+    "4": "WebContent/assets/canvas/prefabs/Ball.canvas"
+  }
+}

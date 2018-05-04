@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>scene</title>
+</head>
+
+<body>
+    <input type="text" id="txt" placeholder="enter sth">
+    <input type="button" id="send" value="send">
+    <ul id="list"></ul>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCBitU1DARRjgEreH0xyRnaQApxdHeEdGk",
+            authDomain: "hexoschoolproject.firebaseapp.com",
+            databaseURL: "https://hexoschoolproject.firebaseio.com",
+            projectId: "hexoschoolproject",
+            storageBucket: "hexoschoolproject.appspot.com",
+            messagingSenderId: "711809536821"
+        };
+        firebase.initializeApp(config);
+    </script>
+<script type="text/javascript" src="dist/vendor.bundle.js"></script><script type="text/javascript" src="dist/bundle.js"></script></body>
+
+</html>
