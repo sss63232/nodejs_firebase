@@ -9,7 +9,20 @@
 </head>
 
 <body>
-    <h1>hello</h1>
+    <h1>index</h1>
+    <input type="text" id="content" name="content">
+    <input type="submit" id="send" value="save">
+    <ul id='list'>
+    <%for(item in todoitems){%>
+        <li>
+            <%- todoitems[item].content %>
+            <input data-id="<%- item %>" type="button" value="remove">
+        </li>
+    <%}%>
+
+    </ul>
+
+    <script src="./js/all.js"></script>
 </body>
 
 </html>
